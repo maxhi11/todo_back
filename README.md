@@ -23,9 +23,16 @@ This endpoint is used for deleting specific tasks. The `task_id` parameter speci
 
 To set up the backend, follow these steps:
 
-1. Run the command `yarn install`.
+1. Run the command
+```bash
+yarn install
+```
 
-2. To start the local server, execute `yarn start:dev`. In the frontend application (frontend project available on [GitHub](https://github.com/maxhi11/todo_front)), ensure you specify the correct environment variable. For example, set `REACT_APP_URL_API=https://localhost:5000`. The default port is 5000.
+2. To start the local server, execute 
+```bash
+yarn start:dev
+```
+In the frontend application (available on [GitHub](https://github.com/maxhi11/todo_front)), ensure you specify the correct environment variable. For example, set `REACT_APP_URL_API=https://localhost:5000`. The default port is 5000.
 
 Your Marvelous 2v backend is ready to handle your requests and interact with the frontend application.
 

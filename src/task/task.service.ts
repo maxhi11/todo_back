@@ -62,7 +62,12 @@ export class TaskService {
 
     async delete(taskId: string) {
         try {
-            this.dataTasks = this.dataTasks.filter((task) => task.id !== taskId);
+            if(taskId === 'clearAll'){
+                this.dataTasks = [];
+            }
+            else{
+                this.dataTasks = this.dataTasks.filter((task) => task.id !== taskId);
+            }
 
             await this.saveData();
             return true;
